@@ -10,7 +10,7 @@ const server = http.createServer((req, res) => {
    
     filePath = path.resolve(__dirname, 'C:/Users/manik/OneDrive/Desktop/hi.txt');
 
-fs.readFile(filePath, {encoding: 'utf-8'}, function(err,data){
+fs.readFile('C:/Users/manik/OneDrive/Desktop/hi.txt', {encoding: 'utf-8'}, function(err,data){
     if (!err) {
         console.log('received data: ' + data);
         res.writeHead(200, {'Content-Type': 'text/html'});
